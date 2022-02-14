@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+{% for resident in residents %}
+	<div>
+		<p>Номер квартиры: {{resident.number_apartment}}</p>
+		<p>Имя и фамилия жильца: {{resident.name}} {{resident.surname}}</p>
+		<p>Контактный номер телефона: {{resident.contact}}</p>
+	</div>
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
